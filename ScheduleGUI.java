@@ -17,8 +17,10 @@ import java.util.Collections;
  ||
  ||         Author:  Kaden Bautista & Neil Marquez
  ||
- ||        Purpose:  This class exists to create the user interface for the schedule app
+ ||        Purpose:  This class exists to create the user interface for the schedule app.
  ||                  It creates the window, text, buttons, and all the visual elements for the app.
+ ||                  It also contains methods to save tasks for later use or load tasks from previous
+ ||                  uses by reading and writing to a file.
  ||
  ||  Inherits From:  JFrame
  ||
@@ -34,8 +36,13 @@ import java.util.Collections;
  ||
  ||  Class Methods:  none
  ||
- ||  Inst. Methods:  [List the names, arguments, and return types of all
- ||                   public instance methods.]
+ ||  Inst. Methods:  createButton, 1 String arugment & 4 int arguments & 1 ActionListener argument, returns a JButton
+ ||                  createLabel, 1 String argument & 4 int arguments, returns a JLabel
+ ||                  createTextField, 4 int arguments, returns a JTextField
+ ||                  createTextArea, 4 int arguments & 1 boolean argument, returns a JTextArea
+ ||                  createScrollbar, 1 JTextArea argument & 4 int arguments, returns a JScrollPane
+ ||                  saveSchedule, no arguments, returns nothing
+ ||                  loadSchedule, JTextArea argument, returns nothing
  ||
  ++-----------------------------------------------------------------------*/
 public class ScheduleGUI extends JFrame {
