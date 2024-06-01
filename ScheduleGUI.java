@@ -295,15 +295,15 @@ public class ScheduleGUI extends JFrame {
   public void loadSchedule(JTextArea displayArea) {
     tasks.clear();
     try (BufferedReader reader = new BufferedReader(new FileReader("schedule.txt"))) {
-      StringBuilder taskString = new StringBuilder();
+      String taskString = "";
       String line;
       while ((line = reader.readLine()) != null) {
         if (line.equals("=====")) {
-          Task task = Task.fromString(taskString.toString());
+          Task task = Task.fromString(taskString);
           tasks.add(task);
-          taskString.setLength(0); // Clear the string builder
+          taskString = "";
         } else {
-          taskString.append(line).append("\n");
+          taskString += line + "\n";
         }
       }
       updateTaskDisplay(displayArea);

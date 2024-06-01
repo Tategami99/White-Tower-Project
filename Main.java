@@ -20,7 +20,7 @@
  | Deficiencies:  There are some red underlines because of the Java version that the replit autocorrect recognizes.
  |                However, those don't cause any actual issues and the project still runs. There is another error in
  |                which I added a lot of tasks and the "task added" display displayed a blank display, but it still
- |                functions as you can still close the display. We did not use nested iterations in the program.
+ |                functions as you can still close the display. We did not use nested itekrations in the program.
  *===========================================================================*/
 
 import javax.swing.*;
